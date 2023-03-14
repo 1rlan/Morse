@@ -11,7 +11,9 @@ struct SwitchLanguageButton: View {
             .scaleEffect(1.25)
             .foregroundColor(.blue)
             .font(.system(size: 20))
-            .frame(maxWidth: .infinity, alignment: .center)
+            .frame(maxWidth: .infinity, alignment: .center).onTapGesture {
+                tapAction()
+            }
     }
 }
 
