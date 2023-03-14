@@ -15,10 +15,10 @@ extension Color {
     }
     
     public static func colorForNumber(_ number: Int) -> Color {
-        let progress = 0.0 // Прогресс на 50%
+        let progress = 0.0 
 
-        let green = Color(red: 0, green: 1, blue: 0) // Зеленый цвет
-        let red = Color(red: 1, green: 0, blue: 0) // Красный цвет
+        let green = Color(red: 0, green: 1, blue: 0)
+        let red = Color(red: 1, green: 0, blue: 0)
 
         let greenRatio = 1 - progress / 10
         let redRatio = progress / 10

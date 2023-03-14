@@ -9,6 +9,8 @@ extension MorseConverter {
     
     func convertToMorse(from: String) -> String {
         let words = from.components(separatedBy: String.oneSpace).map { $0.map(convertLetterToMorse) }
-        return words.map { $0.joined(separator: String.oneSpace) }.joined(separator: String.threeSpaces)
+        return words.map { word in
+            word.joined(separator: String.oneSpace)
+        }.joined(separator: String.threeSpaces)
     }
 }

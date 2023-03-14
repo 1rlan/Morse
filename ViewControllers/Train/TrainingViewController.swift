@@ -24,12 +24,6 @@ struct TrainingViewController: View {
             }.padding()
             .frame(width: 340, height: 60)
             .overlay(RoundedRectangle(cornerRadius: 22).stroke(application.leadingColor, lineWidth: 1))
-//
-//            HStack {
-//                Text.halfTextLine(contentText: "Cheat sheet")
-//            }.padding()
-//            .frame(width: 340, height: 60)
-//            .overlay(RoundedRectangle(cornerRadius: 22).stroke(application.leadingColor, lineWidth: 1))
             
             HStack {
                 Text.halfTextLine(contentText: "Abbreviations")
@@ -37,7 +31,7 @@ struct TrainingViewController: View {
             .frame(width: 340, height: 60)
             .overlay(RoundedRectangle(cornerRadius: 22).stroke(application.leadingColor, lineWidth: 1))
         
-            Button(action: {}) {
+            HStack {
                 Text.halfTextLine(contentText: "Cheat sheet")
             }.padding()
                 .frame(width: 340, height: 60)

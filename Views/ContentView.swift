@@ -1,11 +1,9 @@
-// Irlan Abushakhmanov, 2023
 
 import SwiftUI
 
 struct ContentView: View {
     @State private var tabSelected: TabBarState = .translate
     @State private var isMorseTranslate = true
-    @State private var isInputActive = false
     @State private var inputString = String.empty
     
     @FocusState private var inputFocused: Bool
@@ -16,14 +14,12 @@ struct ContentView: View {
         case .translate:
             HStack {
                 Text(isMorseTranslate ? "Morse" : "English").tabTitle().frame(maxWidth: .infinity, alignment: .trailing)
-                Image(systemName: "arrow.left.arrow.right")
-                    .scaleEffect(1.25)
-                    .foregroundColor(.blue)
-                    .font(.system(size: 20))
-                    .onTapGesture {
-                        isMorseTranslate.toggle()
-                        self.inputString = String.empty
-                    }.frame(maxWidth: .infinity, alignment: .center)
+                
+                SwitchLanguageButton() {
+                    isMorseTranslate.toggle()
+                    self.inputString = String.empty
+                }
+                
                 Text(isMorseTranslate ? "English" : "Morse").tabTitle().frame(maxWidth: .infinity, alignment: .leading)
             }.padding()
                 .frame(height: 55, alignment: .center)
@@ -42,7 +38,10 @@ struct ContentView: View {
                 case .signal:
                     SignalViewController()
                 case .translate:
-                    TranslateViewController(isMorseTranslate: $isMorseTranslate, inputText: $inputString, focused: $inputFocused)
+                    TranslateViewController(
+                        isMorseTranslate: $isMorseTranslate,
+                        inputText: $inputString,
+                        focused: $inputFocused)
                 case .training:
                     TrainingViewController()
                 case .settings:

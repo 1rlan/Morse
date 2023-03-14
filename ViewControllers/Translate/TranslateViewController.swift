@@ -10,7 +10,7 @@ struct TranslateViewController: View {
     
     private let converter = MorseConverter()
     
-    private var bindableIsVisibleError: Binding<String> {
+    private var translatedText: Binding<String> {
         Binding (
             get: {
                 if !isMorseTranslate {
@@ -47,9 +47,10 @@ struct TranslateViewController: View {
             }
             Divider()
             
-            TextEditor(text: bindableIsVisibleError)
+            TextEditor(text: translatedText)
                 .padding(.horizontal, 15)
-                .frame(height: 120).disabled(true)
+                .frame(height: 120)
+                .disabled(true)
             Spacer()
             
             if (isMorseTranslate) {

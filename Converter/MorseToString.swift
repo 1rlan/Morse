@@ -13,23 +13,10 @@ extension MorseConverter {
         }
         
         let words = from.components(separatedBy: String.threeSpaces).map { $0.components(separatedBy: String.oneSpace) }
-        let ans2 = words.map { word in
+        return words.map { word in
             word.map {seq in
                 convertMorseToLetter(seq)
-            }.joined(separator: "")
-        }.joined(separator: " ")
-        print(ans2)
-        
-        var ans = [String]()
-
-        for str in words {
-            var tmp = ""
-            for s in str {
-                tmp += convertMorseToLetter(s)
-            }
-            ans.append(tmp)
-        }
-
-        return ans2
+            }.joined(separator: String.empty)
+        }.joined(separator: String.oneSpace)
     }
 }
