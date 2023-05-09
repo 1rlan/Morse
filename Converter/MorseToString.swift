@@ -7,7 +7,7 @@ extension MorseConverter {
         morseToLetter[String(input)] ?? "?"
     }
     
-    func convertToString(from: String) -> String {
+    internal func convertToString(from: String) -> String {
         guard !from.isEmpty else {
             return from
         }

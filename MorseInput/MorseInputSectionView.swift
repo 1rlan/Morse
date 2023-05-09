@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct MorseInputSectionUIModel: View {
+struct MorseInputSectionView: View {
     @Binding var modifiableString: String
     
     var body: some View {
         VStack {
             HStack {
                 ForEach([MorseInputState.dot, MorseInputState.dash], id: \.rawValue) { state in
-                    MorseInputButtonUIModel(onTapClousre: clousre(state: state), text: state.rawValue)
+                    MorseInputButtonView(onTapClousre: clousre(state: state), text: state.rawValue)
                 }
             }.padding(.horizontal, 14)
             HStack {
                 ForEach([MorseInputState.space, MorseInputState.longspace, MorseInputState.delete], id: \.rawValue) { state in
-                    MorseInputButtonUIModel(onTapClousre: clousre(state: state), text: state.rawValue)
+                    MorseInputButtonView(onTapClousre: clousre(state: state), text: state.rawValue)
                 }
             }.padding(.horizontal, 14)
         }
@@ -43,11 +43,5 @@ struct MorseInputSectionUIModel: View {
                 }
             }
         }
-    }
-}
-
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        MorseInputSectionUIModel(modifiableString: .constant(""))
     }
 }

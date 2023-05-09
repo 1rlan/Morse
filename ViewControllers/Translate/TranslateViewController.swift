@@ -54,7 +54,7 @@ struct TranslateViewController: View {
             Spacer()
             
             if (isMorseTranslate) {
-                MorseInputSectionUIModel(modifiableString: $inputText)
+                MorseInputSectionView(modifiableString: $inputText)
             }
         }.toolbar {
             ToolbarItemGroup(placement: .keyboard) {

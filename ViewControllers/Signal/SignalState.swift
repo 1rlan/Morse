@@ -37,10 +37,10 @@ enum SignalState: String, CaseIterable {
                 stringToTranslate.forEach { morseSymbol in
                     switch morseSymbol {
                     case ".":
-                        flashka(tick: .short)
+                        flashON(tick: .short)
                         sleep(tick: .pause)
                     case "-":
-                        flashka(tick: .long)
+                        flashON(tick: .long)
                         sleep(tick: .pause)
                     default:
                         sleep(tick: .pause)
@@ -56,7 +56,7 @@ enum SignalState: String, CaseIterable {
     }
     
     
-    private func flashka(tick: Tick) {
+    private func flashON(tick: Tick) {
         flashLightOn(mode: .on)
         sleep(tick: tick)
         flashLightOn(mode: .off)

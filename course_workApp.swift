@@ -4,6 +4,8 @@ import SwiftUI
 
 @main
 struct main: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView().onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
@@ -27,3 +29,12 @@ extension UIApplication: UIGestureRecognizerDelegate {
         return true 
     }
 }
+
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        CustomUD.register()
+        return true
+    }
+}
+

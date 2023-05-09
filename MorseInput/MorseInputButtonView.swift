@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MorseInputButtonUIModel: View {
+struct MorseInputButtonView: View {
     let application = UIApplication.shared
     
     let onTapClousre: () -> Void
@@ -20,11 +20,5 @@ struct MorseInputButtonUIModel: View {
                 .background(application.lightGrayColor)
                 .cornerRadius(20)
         }
-    }
-}
-
-struct MorseInputButtonUIModel_Previews: PreviewProvider {
-    static var previews: some View {
-        MorseInputButtonUIModel(onTapClousre: {}, text: "")
     }
 }

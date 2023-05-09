@@ -33,9 +33,3 @@ struct TabBar: View {
         }
     }
 }
-
-struct CustomTabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBar(selectedTab: .constant(.translate))
-    }
-}

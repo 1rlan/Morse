@@ -7,7 +7,7 @@ extension MorseConverter {
         lettersToMorse[String(input)] ?? String.empty
     }
     
-    func convertToMorse(from: String) -> String {
+    internal func convertToMorse(from: String) -> String {
         let words = from.components(separatedBy: String.oneSpace).map { $0.map(convertLetterToMorse) }
         return words.map { word in
             word.joined(separator: String.oneSpace)

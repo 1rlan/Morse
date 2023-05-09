@@ -38,7 +38,7 @@ struct SignalViewController: View {
             
             Spacer()
             
-            MorseInputSectionUIModel(modifiableString: $inputText)
+            MorseInputSectionView(modifiableString: $inputText)
         }
     }
 }
