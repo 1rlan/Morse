@@ -13,7 +13,7 @@ struct ButtonTitle: View {
     
     var body: some View {
         HStack {
-            smallButton(signSymbol: .returnView) {
+            SmallButton(signSymbol: .returnView) {
                 tapAction()
             }
 

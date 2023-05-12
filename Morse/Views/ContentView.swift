@@ -18,7 +18,7 @@ struct ContentView: View {
                 HStack {
                     Text(isMorseTranslate ? "Morse" : "English").tabTitle().frame(maxWidth: .infinity, alignment: .trailing)
                     
-                    smallButton(signSymbol: .switchTranslation) {
+                    SmallButton(signSymbol: .switchTranslation) {
                         isMorseTranslate.toggle()
                         self.inputString = String.empty
                     }

@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct smallButton: View {
+struct SmallButton: View {
     let signSymbol: Sign
     let tapAction: () -> Void
     
