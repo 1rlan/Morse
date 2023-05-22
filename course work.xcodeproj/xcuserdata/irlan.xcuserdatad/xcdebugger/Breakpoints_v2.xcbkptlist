@@ -164,5 +164,403 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DC9467B-FD7E-428B-9382-BD86DD1B2B99"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Morse/Views/CardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "popView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2DC9467B-FD7E-428B-9382-BD86DD1B2B99 - 951be0c148c1270c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.CardView.popView() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/Views/CardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "2DC9467B-FD7E-428B-9382-BD86DD1B2B99 - 951be0c148c1270c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.CardView.popView() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/Views/CardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "2DC9467B-FD7E-428B-9382-BD86DD1B2B99 - 951be0c148c1270c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.CardView.popView() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/Views/CardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "411F7DA7-1D82-4A09-A337-5413D01E1B33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Morse/Models/SymbolModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "411F7DA7-1D82-4A09-A337-5413D01E1B33 - 1b35de813db91c1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.SymbolModel.init(from: Swift.Decoder) throws -&gt; course_work.SymbolModel"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/Models/SymbolModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "411F7DA7-1D82-4A09-A337-5413D01E1B33 - 1b35de813db91fff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.SymbolModel.init(from: Swift.Decoder) throws -&gt; course_work.SymbolModel"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/Models/SymbolModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47C10443-386F-46E2-A4E9-692EE658BE16"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Morse/Models/SymbolModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "encode(to:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "47C10443-386F-46E2-A4E9-692EE658BE16 - c559aaad872d58bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.SymbolModel.encode(to: Swift.Encoder) throws -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/Models/SymbolModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "47C10443-386F-46E2-A4E9-692EE658BE16 - c559aaad872d58dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.SymbolModel.encode(to: Swift.Encoder) throws -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/Models/SymbolModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "278DF25F-3910-46FC-9178-084971B6DA70"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Morse/ViewControllers/Train/ViewControllers/CardViewController/CardViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "knowTap()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97A8E3CB-3DD2-4F06-8460-6C3D748EDE8B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Morse/CommonViews/DataView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "popView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CADE96D0-6489-432E-8929-63DDE8656675"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Morse/CommonViews/DataView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "popView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CADE96D0-6489-432E-8929-63DDE8656675 - 1cf1307a26ffdf06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.DataView.popView() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/CommonViews/DataView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "CADE96D0-6489-432E-8929-63DDE8656675 - 1cf1307a26ffdf27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.DataView.popView() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/CommonViews/DataView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD10546B-A112-4B07-88E0-4591784C16AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InputTrainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "checkInput()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BD10546B-A112-4B07-88E0-4591784C16AB - 25173a69908d5cb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.InputTrainViewController.checkInput() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/InputTrainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "BD10546B-A112-4B07-88E0-4591784C16AB - 25173a69908d5cb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.InputTrainViewController.checkInput() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/InputTrainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "BD10546B-A112-4B07-88E0-4591784C16AB - 25173a69908d5cb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "course_work.InputTrainViewController.checkInput() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/InputTrainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "591390A6-E0A3-4EFE-A82E-C9E1940B6B40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InputTrainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "showNewTitle(state:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B419B1B-6F6E-4AD8-B6FA-13EFB7BEAF82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InputTrainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "showNewTitle(state:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBBE6408-CCE2-40CD-BCB8-931EFA7CB3B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Morse/ViewControllers/Train/TrainingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB2CFCFC-3C15-482F-BB17-132B7538B757"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Morse/ViewControllers/Signal/Views/SignalButtonView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "tapClousreDetachedCall()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FB2CFCFC-3C15-482F-BB17-132B7538B757 - b39e6845bc993135"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in course_work.SignalButtonView.tapClousreDetachedCall() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/ViewControllers/Signal/Views/SignalButtonView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "FB2CFCFC-3C15-482F-BB17-132B7538B757 - d60b0150ba8617b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () -&gt; () in course_work.SignalButtonView.tapClousreDetachedCall() -&gt; ()"
+                  moduleName = "course work"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irlan/Desktop/course%20work/Morse/ViewControllers/Signal/Views/SignalButtonView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

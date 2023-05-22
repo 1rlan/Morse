@@ -5,21 +5,23 @@ import SwiftUI
 extension Text {
     public func settingsTitle() -> some View {
         self.font(.system(.title3).weight(.semibold))
-            .padding(.leading, 24)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
     
     public func tabTitle() -> some View {
         self.font(.system(.title3).weight(.semibold))
+            .frame(height: 50, alignment: .center)
     }
     
     @ViewBuilder
-    public static func textLine(contentText: String, dataText: String) -> some View {
+    public static func textLine(contentText: String, dataText: String? = nil) -> some View {
         HStack {
             Text(contentText).padding(.leading, 20)
             Spacer()
-            Text(dataText).padding(.trailing, 20)
-                .foregroundColor(UIApplication.shared.darkGrayColor)
+            if let dataText {
+                Text(dataText).padding(.trailing, 20)
+                    .foregroundColor(UIApplication.shared.darkGrayColor)
+            }
         }
     }
     

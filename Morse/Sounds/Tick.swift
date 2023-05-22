@@ -1,6 +1,6 @@
 // Irlan Abushakhmanov, 2023
 
-import Foundation
+import SwiftUI
 
 enum Tick: String {
     case long
@@ -11,17 +11,24 @@ enum Tick: String {
     var duration: Double {
         switch self {
         case .short:
-            return shortDuration
+            return 0.1 * ratio
         case .long:
-            return shortDuration * shortLongRatio
+            return 0.3 * ratio
         case .pause:
-            return pauseDuration
+            return 0.3 * ratio
         case .longPause:
-            return pauseDuration * shortLongRatio
+            return 0.7 * ratio
+        }
+    }
+    
+    var color: Color {
+        switch self {
+        case .long, .short:
+            return Color.white
+        case .longPause, .pause:
+            return Color.black
         }
     }
 }
 
-private let shortDuration = 0.2
-private let pauseDuration = 0.2
-private let shortLongRatio = 3.0
+private let ratio: Double = 3

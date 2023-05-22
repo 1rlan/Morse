@@ -7,8 +7,8 @@ public struct AbbreviationModel {
 }
 
 public let abbreviationModels = [
-    AbbreviationModel(abbreviation: "SOS", morse: "•••---•••", description: "Only used by original message sender, and only for imminent danger to life."),
-    AbbreviationModel(abbreviation: "OK", morse: "---  -•- ", description: "Agreement of confirmation."),
+    AbbreviationModel(abbreviation: "SOS", morse: "••• --- •••", description: "Only used by original message sender, and only for imminent danger to life."),
+    AbbreviationModel(abbreviation: "OK", morse: "---  -•-", description: "Agreement of confirmation."),
     AbbreviationModel(abbreviation: "Attention", morse: "-•-•-", description: "Transmission starting signal. Stands for Commencing Transmission."),
     AbbreviationModel(abbreviation: "Confirm", morse: "-•-•  ••-•  --", description: "Message received."),
     AbbreviationModel(abbreviation: "Say Again", morse: "••--••", description: "When standing alone, request yo repeat the message."),

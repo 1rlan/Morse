@@ -7,14 +7,14 @@
 
 import Foundation
 
-enum UDKeys {
+enum UDKeys: String {
     case symbolCards
+    case difficultyCards
+    case screenLight
+    case inputModel
     
     
     public var key: String {
-        switch self {
-        case .symbolCards:
-            return "symbolCardsKey"
-        }
+        rawValue + "key"
     }
 }

@@ -1,9 +1,9 @@
 // Irlan Abushakhmanov, 2023
 
-import Foundation
+import SwiftUI
 
-final class MorseConverter {
-    internal let lettersToMorse = [
+struct MorseConverter {
+    internal static let lettersToMorse: [Character: String] = [
         "A": ".-",
         "B": "-...",
         "C": "-.-.",
@@ -146,7 +146,7 @@ final class MorseConverter {
         ")": "-.--.-",
     ]
     
-    internal let morseToLetter = [
+    internal static let morseToLetter =  [
         ".-": "a",
         "-...": "b",
         "-.-.": "c",

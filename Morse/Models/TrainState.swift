@@ -4,20 +4,20 @@ import SwiftUI
 
 enum TrainState: String, CaseIterable {
     case words = "Words"
-    case cards = "Cards"
+    case cards = "Input Train"
     case cheat = "Cheat sheet"
     case abbreviations = "Abbreviations"
     
-    public func destination(tabbarActive: Binding<Bool>) -> some View {
+    public func destination(barStates: BarsStates) -> any View {
         switch self {
         case .words:
-            return AnyView(CardView(tabbarActive: tabbarActive, state: self))
+            return CardView(barStates: barStates)
         case .cards:
-            return AnyView(CardView(tabbarActive: tabbarActive, state: self))
+            return InputTrainView(barStates: barStates)
         case .cheat:
-            return AnyView(DataView(tabbarActive: tabbarActive, state: self))
+            return DataView(barStates: barStates, state: self)
         case .abbreviations:
-            return AnyView(DataView(tabbarActive: tabbarActive, state: self))
+            return DataView(barStates: barStates, state: self)
         }
     }
 }

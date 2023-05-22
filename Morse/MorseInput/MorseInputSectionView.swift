@@ -33,9 +33,9 @@ struct MorseInputSectionView: View {
         case .dash:
             return { modifiableString += "-" }
         case .space:
-            return { modifiableString += " " }
+            return { modifiableString += String.oneSpace }
         case .longspace:
-            return { modifiableString += "   "}
+            return { modifiableString += String.threeSpaces}
         case .delete:
             return {
                 if !modifiableString.isEmpty {

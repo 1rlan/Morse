@@ -1,6 +1,5 @@
 // Irlan Abushakhmanov, 2023
 
-import Foundation
 import SwiftUI
 
 import AVFoundation
@@ -18,9 +17,6 @@ enum SignalState: String, CaseIterable {
     }
     
     func translateString(stringToTranslate: String) -> TranslateAction {
-        let filteredString = stringToTranslate.components(separatedBy: String.threeSpaces)
-            .map { $0.components(separatedBy: String.oneSpace)
-            .joined() }.joined(separator: String.oneSpace)
         switch self {
         case .flash:
             return flashing(stringToTranslate: stringToTranslate)
@@ -78,17 +74,16 @@ enum SignalState: String, CaseIterable {
             stringToTranslate.forEach { morseSymbol in
                 switch morseSymbol {
                 case ".":
-                    PlaySound.play(tick: .short)
+                    TranslationPlayer.play(tick: .short)
                     sleep(tick: .pause)
                 case "-":
-                    PlaySound.play(tick: .long)
+                    TranslationPlayer.play(tick: .long)
                     sleep(tick: .pause)
                 default:
                     sleep(tick: .pause)
                 }
             }
         }
-        
     }
     
     private func vibration(stringToTranslate: String) -> TranslateAction {

@@ -8,32 +8,64 @@
 import Foundation
 
 struct CustomUD {
-    private static let decoder = JSONDecoder()
-    private static let encoder = JSONEncoder()
+    private static let defaults = UserDefaults.standard
+    private static let initialValues = InitialValues()
     
-    public static func setValue<T>(data: T, keyState: UDKeys) where T: Codable {
-        if let encoded = try? encoder.encode(data) {
-            UserDefaults.standard.set(encoded, forKey: keyState.key)
+    public static func setValue<T>(data: T, keyState: UDKeys) throws where T: Codable {
+        let encoder = JSONEncoder()
+        do {
+            let data = try encoder.encode(data)
+            defaults.set(data, forKey: keyState.key)
+        } catch {
+            throw ObjectSavableError.unableToEncode
         }
     }
     
-    public static func fetchData<T>(keyState: UDKeys) -> T? where T: Codable {
-        if let rawData = UserDefaults.standard.data(forKey: keyState.key) {
-            if let data = try? decoder.decode(T.self, from: rawData) {
-                return data
-            }
+    public static func fetchData<T>(keyState: UDKeys, castTo type: T.Type) throws -> T where T: Codable {
+        guard let data = UserDefaults.standard.data(forKey: keyState.key) else {
+            throw ObjectSavableError.noValue
         }
-        
-        return nil
+        let decoder = JSONDecoder()
+        do {
+            let object = try decoder.decode(type, from: data)
+            return object
+        } catch {
+            throw ObjectSavableError.unableToDecode
+        }
     }
     
     public static func register() {
-        registerData(data: symbolModels, keyState: .symbolCards)
+        do {
+            try registerData(data: initialValues.symbolModels, keyState: .symbolCards)
+            try registerData(data: initialValues.inputModel, keyState: .inputModel)
+            defaults.register(defaults:
+                    [
+                        UDKeys.difficultyCards.key: "easy",
+                        UDKeys.screenLight.key: false
+                    ]
+                )
+        } catch {
+            print("Cant register data")
+        }
     }
     
-    private static func registerData<T>(data: T, keyState: UDKeys) where T: Codable {
-        if let encoded = try? encoder.encode(data) {
-            UserDefaults.standard.register(defaults: [keyState.key: encoded])
+    public static func resetTrainingProgress() {
+        do {
+            try setValue(data: initialValues.symbolModels, keyState: .symbolCards)
+            try setValue(data: initialValues.inputModel, keyState: .inputModel)
+        } catch {
+            print("Cant register data")
+        }
+    }
+    
+    
+    private static func registerData<T>(data: T, keyState: UDKeys) throws where T: Codable {
+        let encoder = JSONEncoder()
+        do {
+            let encoded = try encoder.encode(data)
+            defaults.register(defaults: [keyState.key: encoded])
+        } catch {
+            throw ObjectSavableError.unableToEncode
         }
     }
 }
