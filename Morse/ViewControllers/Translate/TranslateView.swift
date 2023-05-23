@@ -1,12 +1,10 @@
 // Irlan Abushakhmanov, 2023
 
 import SwiftUI
-import Combine
 
 struct TranslateView: View {
     @Binding var translateState: TranslateState
     @Binding var translateInputText: String
-    @State var invalidSymbolAlert: Bool = false
     
     var focused: FocusState<Bool>.Binding
     let converter = MorseConverter()
@@ -57,11 +55,6 @@ struct TranslateView: View {
                     focused.wrappedValue = false
                 }
             }
-        }.alert(isPresented: $invalidSymbolAlert) {
-            Alert(
-                title: Text("Invalid symbol value"),
-                message: Text("Only english and digit letters"),
-                dismissButton: .default(Text("Ok")))
         }
     }
     

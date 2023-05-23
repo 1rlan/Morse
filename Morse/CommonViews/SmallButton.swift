@@ -19,7 +19,6 @@ struct SmallButton: View {
     enum Sign: String {
         case switchTranslation = "arrow.left.arrow.right"
         
-        
         var signWidth: CGFloat {
             switch self {
             case .switchTranslation:
