@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SymbolModel: Codable, ObservableObject, Equatable {
+final public class SymbolModel: Codable, ObservableObject, Equatable {
     public var symbol: String
     public var morse: String
     

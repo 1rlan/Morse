@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CardModel: ObservableObject {
+final class CardModel: ObservableObject {
     init() {
         do {
             models = try CustomUD.fetchData(keyState: .symbolCards, castTo: [SymbolModel].self)

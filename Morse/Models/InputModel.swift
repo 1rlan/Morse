@@ -7,7 +7,7 @@
 
 import Foundation
 
-class InputModel: Codable {
+final class InputModel: Codable {
     public init(characters: [String], words: [String], sentences: [String]) {
         self.characters = characters
         self.sentences = sentences

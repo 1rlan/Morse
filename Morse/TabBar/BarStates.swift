@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BarsStates: ObservableObject {
+final class BarsStates: ObservableObject {
     @Published private var active = true
     
     func activate() {

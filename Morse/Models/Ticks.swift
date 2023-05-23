@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Ticks {
+final class Ticks {
     init(ticks: [Tick]) {
         self.ticks = ticks
     }

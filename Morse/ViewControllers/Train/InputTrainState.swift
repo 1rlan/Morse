@@ -7,7 +7,7 @@
 
 import Foundation
 
-class InputTrainState: ObservableObject {
+final class InputTrainState: ObservableObject {
     @Published var stringToShow: String?
     private var models: InputModel
     private var difficultyLevel: DifficultyState
